@@ -1,0 +1,94 @@
+:root {
+  --primary: #6a5af9;
+  --secondary: #d66efd;
+  --colorPink: #f62682;
+  --colorGreen: #20e3b2;
+  --colorOrange: #ff6651;
+  --colorGray: #eee;
+  --colorBlue: #2cccff;
+  --colorHover: rgba(0, 0, 0, 0.1);
+}
+/* ================================ */
+.react {
+  color: var(--colorBlue);
+}
+.sass {
+  color: var(--colorPink);
+}
+.javascript {
+  color: gold;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  background-color: var(--colorGray);
+  padding: 10px 20px;
+  color: black;
+  transition: all 0.2s linear;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.tab-switch {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px;
+}
+.tab-switch:hover {
+  background-color: var(--colorHover);
+  color: var(--colorGreen);
+}
+.tab-switch.active {
+  color: var(--colorGreen);
+}
+.tab-switch::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  transition: all 0.2s linear;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  background-color: var(--colorGreen);
+}
+.tab-switch.active::before {
+  width: 100%;
+}
+
+.tab-container {
+  margin-top: 20px;
+}
+.tab-content-heading {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tab-content-heading span {
+  font-size: 30px;
+  font-weight: 600;
+}
+.tab-content-heading i {
+  font-size: 40px;
+}
+.tab-content.show {
+  display: block;
+}
+.tab-content {
+  display: none;
+}

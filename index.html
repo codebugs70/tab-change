@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME LINK -->
+    <script
+      src="https://kit.fontawesome.com/5f219ec053.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LINK FILE CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Tabs</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="tab-header">
+        <div data-tab="1" class="tab-switch active">React</div>
+        <div data-tab="2" class="tab-switch">Sass</div>
+        <div data-tab="3" class="tab-switch">Javascript</div>
+      </div>
+
+      <div class="tab-container">
+        <div data-content="1" class="tab-content show">
+          <div class="tab-content-heading react">
+            <span>React</span>
+            <i class="fa-brands fa-react"></i>
+          </div>
+          <p>
+            React is a JavaScript library for building user interfaces. It is
+            used to create reusable UI components and to manage the state of a
+            web application. React uses a declarative syntax to describe the
+            desired output and updates the DOM efficiently by only rendering the
+            components that have changed. It has become a popular choice for
+            building complex and dynamic web applications.
+          </p>
+        </div>
+        <div data-content="2" class="tab-content">
+          <div class="tab-content-heading sass">
+            <span>Sass</span>
+            <i class="fa-brands fa-sass"></i>
+          </div>
+          <p>
+            Sass (short for "Syntactically Awesome Style Sheets") is a
+            preprocessor scripting language that is used to generate CSS
+            stylesheets. It extends the capabilities of CSS by providing
+            additional features such as variables, mixins, nesting, inheritance,
+            and functions.
+          </p>
+        </div>
+        <div data-content="3" class="tab-content">
+          <div class="tab-content-heading javascript">
+            <span>JavaScript</span>
+            <i class="fa-brands fa-square-js"></i>
+          </div>
+          <p>
+            JavaScript is a programming language that is used to add
+            interactivity and dynamic behavior to web pages. It can be used to
+            create animations, manipulate the Document Object Model (DOM),
+            perform form validation, and create interactive web applications.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
